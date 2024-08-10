@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_application_traning_01/screens/sc_main.dart';
+import 'package:flutter_application_traning_01/screens/sc_login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,8 +22,9 @@ class MyApp extends StatelessWidget {
       ),
      
      initialRoute: '/',    // การประกาศหน้าเริ่มต้น
-     routes: {
-       '/': (context) => MainScreen()   
+     routes: {      
+       '/': (context) => LoginScreen(),
+        '/home': (context) => MainScreen()   
      },
 
     );
