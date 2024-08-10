@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_traning_01/screens/sc_main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Training',
       theme: ThemeData(
         // This is the theme of your application.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -20,8 +21,7 @@ class MyApp extends StatelessWidget {
      
      initialRoute: '/',    // การประกาศหน้าเริ่มต้น
      routes: {
-       '/': (context) => const MyHomePage(title: 'Flutter Demo Home Page'),
-       '/second': (context) => const SecondPage(title: 'Second Page'),
+       '/': (context) => MainScreen()   
      },
 
     );
