@@ -1,5 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'package:flutter_application_traning_01/screens/home/content_screen.dart';
 import 'package:flutter_application_traning_01/screens/sc_main.dart';
 import 'package:flutter_application_traning_01/screens/sc_login.dart';
 
@@ -20,13 +20,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-     
-     initialRoute: '/',    // การประกาศหน้าเริ่มต้น
-     routes: {      
-       '/': (context) => LoginScreen(),
-        '/home': (context) => MainScreen()   
-     },
 
+      initialRoute: '/', // การประกาศหน้าเริ่มต้น
+      routes: {
+        '/': (context) => const LoginScreen(),
+        '/home': (context) => const MainScreen(),
+        '/content': (context) => const ContentScreen()
+      },
     );
   }
 }

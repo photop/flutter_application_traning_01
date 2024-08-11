@@ -47,7 +47,7 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
 // ประกาศค่าเมื่อมีการเรียกใช้งาน
-  void initState() async {
+  void initState() {
     // TODO: implement initState
     _checkLogin();
     super.initState();
